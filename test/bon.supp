@@ -1,0 +1,31 @@
+{
+   _dl_runtime_resolve_xsave-0
+   Helgrind:Race
+   fun:_dl_runtime_resolve_xsave
+   fun:(below main)
+}
+{
+   mutex_destroy_WRK-0
+   Helgrind:Race
+   fun:mutex_destroy_WRK
+   fun:main
+}
+{
+   mutex_destroy_WRK-01
+   Helgrind:Race
+   fun:my_memcmp
+   fun:mutex_destroy_WRK
+   fun:main
+}
+{
+   mutex_destroy_WRK-1
+   Helgrind:Misc
+   fun:mutex_destroy_WRK
+   fun:main
+}
+{
+   mutex_destroy_WRK-2
+   Helgrind:PthAPIerror
+   fun:mutex_destroy_WRK
+   fun:main
+}
